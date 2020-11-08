@@ -113,8 +113,8 @@ void MicroDot::begin() {
   delay(15);
 
   Wire.beginTransmission(aDig12);
-  Wire.write(0xFF);                 // write to configuration register
-  Wire.write(0x00);                 // 8x8
+  Wire.write(0xFF);                 // reset config
+  Wire.write(0x00);                 
   Wire.endTransmission(); 
   
   Wire.beginTransmission(aDig12);
@@ -123,8 +123,8 @@ void MicroDot::begin() {
   Wire.endTransmission(); 
 
   Wire.beginTransmission(aDig34);
-  Wire.write(0xFF);                 // write to configuration register
-  Wire.write(0x00);                 // 8x8
+  Wire.write(0xFF);                 // reset config
+  Wire.write(0x00);                 
   Wire.endTransmission(); 
 
   Wire.beginTransmission(aDig34);
@@ -133,8 +133,8 @@ void MicroDot::begin() {
   Wire.endTransmission(); 
 
   Wire.beginTransmission(aDig56);
-  Wire.write(0xFF);                 // write to configuration register
-  Wire.write(0x00);                 // 8x8
+  Wire.write(0xFF);                 // reset config
+  Wire.write(0x00);                 
   Wire.endTransmission(); 
 
   Wire.beginTransmission(aDig56);
