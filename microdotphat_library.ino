@@ -61,8 +61,7 @@ void setup()
   MD.writeString("Hello!");
   delay(300);
 
-  // WiFiMultiple.addAP("SSID", "passpasspass");
-  WiFiMultiple.addAP("Skr1474", "dddddddd");
+  WiFiMultiple.addAP("SSID", "passpasspass");
 
   Serial.println();
   M5.Lcd.println("");
